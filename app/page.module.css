@@ -346,7 +346,8 @@
   flex-direction: column; /* Stack elements vertically */
   justify-content: center; /* Center the content vertically */
   align-items: center; /* Center the content horizontally */
-  width: 80%;
+  width: 50%;
+  max-width: 600px;
   text-align: center;
   padding: 40px;
   margin: 100px auto; /* Center horizontally and add space around */
