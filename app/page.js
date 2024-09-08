@@ -70,10 +70,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* Add the meta tag to prevent zooming on mobile */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <title>Stockify - AI-Powered Inventory Management</title>
       </Head>
+
+
       <main className={styles.main}>
         <div className={styles.container}>
           {/* Header Section */}

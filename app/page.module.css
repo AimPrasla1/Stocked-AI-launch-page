@@ -11,23 +11,18 @@
 }
 
 /* Header Section */
-/* Header Section */
 .header {
+  position: sticky; /* Make the header sticky */
+  top: 0; /* Stick it to the top of the viewport */
+  z-index: 1000; /* Ensure it's above other elements */
+  background-color: #000000; /* Ensure the header has a visible background */
+  padding: 20px; /* Add padding for spacing */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: transparent;
-  position: sticky; /* Changed from absolute to sticky */
-  top: 0; /* Ensure the header sticks to the top of the viewport */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: add a shadow for better visibility */
   width: 100%;
-  z-index: 1000;
-  padding-top: 30px;
-  animation: fadeIn 1.8s ease-in-out;
-  padding-bottom: 30px;
-  background-color: #000000;
 }
-
 
 /* Logo stays on the left */
 .logo img {
@@ -53,15 +48,14 @@
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.3s ease;
-  animation: fadeIn 1.8s ease-in-out;
   border-color: #fcd12a;
 }
 
-/* Hover effect for the nav buttons */
 .navButton:hover {
   background-color: #fcd12a;
   color: white;
 }
+
 
 /* Hero Section */
 .hero {
@@ -718,7 +712,7 @@
 
   .useCaseItem {
     flex-direction: column;
-    width: 90%;
+    width: 88%;
     padding: 20px;
     margin-bottom: 50px;
     border-radius: 30px;

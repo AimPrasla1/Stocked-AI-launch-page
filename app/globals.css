@@ -1,9 +1,16 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
 
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling without affecting vertical flow */
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 400; /* Ensure the font weight is 400 */
+  font-weight: 400;
   margin: 0;
   padding: 0;
   background-color: #000000;
@@ -11,10 +18,8 @@ body {
   animation: gradientBackground 15s ease infinite;
   color: #151718;
   min-height: 100vh;
-  display: flex; /* Use Flexbox to center content */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  overflow-x: hidden; /* Hide horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 /* Keyframes for background animation */
@@ -36,8 +41,8 @@ a {
 }
 
 h1, h2, h3, p {
-  font-family: 'Quicksand', sans-serif; /* Apply the font to headings and paragraphs */
-  font-weight: 400; /* Ensure the font weight is 400 */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
   margin: 0;
   padding: 0;
 }
@@ -48,21 +53,13 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Add Container for Content */
-.container {
+/* Sticky header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000000;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   width: 100%;
-  max-width: 1200px; /* Limit the content width for desktop */
-  padding: 20px; /* Padding for inner spacing */
-  margin: 0 auto; /* Center the content horizontally */
-  text-align: center; /* Center-align text by default */
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 90%; /* Ensure content takes up more space on mobile */
-  }
-
-  h2 {
-    font-size: 1.8rem; /* Adjust the heading size for mobile */
-  }
 }
