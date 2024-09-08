@@ -11,6 +11,10 @@ body {
   animation: gradientBackground 15s ease infinite;
   color: #151718;
   min-height: 100vh;
+  display: flex; /* Use Flexbox to center content */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Keyframes for background animation */
@@ -42,4 +46,23 @@ h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
+}
+
+/* Add Container for Content */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Limit the content width for desktop */
+  padding: 20px; /* Padding for inner spacing */
+  margin: 0 auto; /* Center the content horizontally */
+  text-align: center; /* Center-align text by default */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Ensure content takes up more space on mobile */
+  }
+
+  h2 {
+    font-size: 1.8rem; /* Adjust the heading size for mobile */
+  }
 }
