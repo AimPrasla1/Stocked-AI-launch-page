@@ -87,7 +87,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroText}>
-          <h1>Welcome to Stocked</h1>
+          <h1>Welcome to Stockify</h1>
           <p>The future of inventory management, powered by <span className={styles.gradientText}>AI</span>.</p>
           <div className={styles.buttonGroup}>
             <button className={styles.signUpButton} onClick={() => scrollToSection(`.${styles.signUpSection}`)}>Sign Up</button>
@@ -157,7 +157,7 @@ export default function Home() {
         {!isSignedUp ? (
           <>
             <h2>Sign Up for Early Access</h2>
-            <p>Be the first to access Stocked when it launches!</p>
+            <p>Be the first to access Stockify when it launches!</p>
             <form onSubmit={handleEmailSubmit}>
               <input
                 type="text"
@@ -186,7 +186,7 @@ export default function Home() {
         ) : (
           <div className={styles.thankYouSection}>
             <h2>Thank You for Signing Up!</h2>
-            <p>We will be in touch with exclusive early access as we prepare to launch Stocked. Stay tuned for exciting updates!</p>
+            <p>We will be in touch with exclusive early access as we prepare to launch Stockify. Stay tuned for exciting updates!</p>
           </div>
         )}
       </section>
@@ -209,7 +209,7 @@ export default function Home() {
           </div>
           {/* Copyright text */}
           <div className={styles.footerRight}>
-            <p>© Stocked AI. All rights reserved.</p>
+            <p>© Stockify AI. All rights reserved.</p>
           </div>
         </div>
       </footer>

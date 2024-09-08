@@ -1,11 +1,14 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap');
+
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400; /* Ensure the font weight is 400 */
   margin: 0;
   padding: 0;
-  background-color: #000000; /* Background color */
-  background-size: 400% 400%; /* Make the background larger for animation */
-  animation: gradientBackground 15s ease infinite; /* Background animation */
+  background-color: #000000;
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
   color: #151718;
   min-height: 100vh;
 }
@@ -29,6 +32,8 @@ a {
 }
 
 h1, h2, h3, p {
+  font-family: 'Quicksand', sans-serif; /* Apply the font to headings and paragraphs */
+  font-weight: 400; /* Ensure the font weight is 400 */
   margin: 0;
   padding: 0;
 }
