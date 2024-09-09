@@ -59,15 +59,15 @@
 
 /* Hero Section */
 .hero {
-  min-height: 40vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between; /* Distributes space between text and image */
   align-items: center;
   padding: 130px 20px;
   color: white;
   background-color: #000000;
-  padding-bottom: 115px;
-  padding-top: 80px;
+  padding-bottom: 75px;
+  margin-top: -200px;
 }
 
 /* Left-aligned text */
@@ -628,6 +628,16 @@
     align-items: center;
     text-align: center;
     padding-bottom: 110px;
+  }
+  .hero {
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between; /* Distributes space between text and image */
+    align-items: center;
+    padding: 245px 20px;
+    color: white;
+    background-color: #000000;
+    padding-bottom: 115px;
   }
 
   .heroImage {

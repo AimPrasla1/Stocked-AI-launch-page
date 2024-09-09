@@ -22,6 +22,11 @@ body {
   overflow-y: auto; /* Allow vertical scrolling */
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
+
 /* Keyframes for background animation */
 @keyframes gradientBackground {
   0% {
